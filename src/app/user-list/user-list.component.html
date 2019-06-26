@@ -1,0 +1,5 @@
+<div class="container" *ngFor="let user of userList">
+    <app-user [user]=user></app-user>
+    <button (click)="delete(user)" >Delete</button>
+    <button (click)="verify(user)" >Verify</button>
+</div>
